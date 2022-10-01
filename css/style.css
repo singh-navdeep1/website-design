@@ -137,7 +137,7 @@ nav ul li a:hover {
   background-color: #d80516;
   padding: 10px 40px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: capitalize;
   margin: 8px;
   color: #fff;
@@ -682,7 +682,7 @@ text-transform: capitalize;
 } */
 
 
-.con2 {
+/* .con2 {
   width: 100%;
   height: auto;
   background: url(../images/background-2.webp);
@@ -762,8 +762,8 @@ text-transform: capitalize;
 }
 .s-content {
   margin: 0 22px !important;
-  /* border-radius: 25px; */
-}
+  border-radius: 25px; 
+} */
 .whte1{
   color: #fff;
   padding-left: 10%;
@@ -1207,6 +1207,8 @@ footer {
   padding-top: 2%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 2%;
+  overflow: hidden;
+  transition: 0.7s;
 }
 .t1 img{
   margin-left: 38%;
@@ -1218,6 +1220,17 @@ footer {
   color: #000;
   text-align: center;
   margin-bottom: 5%;
+}
+.boxsec .t1:hover{
+  background: #D2122E;
+  transform: scale(1.1);
+  z-index: 9;
+}
+.boxsec .t1:hover h3{
+  color: #fff !important;
+}
+.boxsec .t1:hover p{
+  color: #fff !important;
 }
 .wedeliver{
   width: 100%;
@@ -1295,57 +1308,191 @@ font-weight: 500;
   transform: translateY(calc(-100% + 200px));
   transition: transform 5s ease-in-out;
 }
-.whyus{
+/* .whyus{
   width: 100%;
-  height: 800px;
+  height: auto;
   float: left;
-  background: url(../images/ngo-website-.jpg) no-repeat;
+  /* background: url(../images/ngo-website-.jpg) no-repeat;
   background-size: cover;
   background-position: center ;
-  position: relative;
- 
+  position: relative; 
 }
-.background_overlay{
+ .background_overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, .5);
-    }
-    #head_top{
+    } */
+    /* #head_top{
       width: 100%;
       height: auto;
       position: relative;
       z-index: 1000;
       margin-top: 2%;
-    }
-    #head_top h2{
-      color: #000;
-    }
-    #head_top p{ 
-      color:#FFF !important;
-    }
-.t3{
-  width: 40%;
+    } */
+   
+/* .t3{
+  width: 48%;
   height: 200px;
-  background-image: url(../images/test-bg.jpg);
+  background-color: #fff;
   padding-top: 2%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 2%;
   margin-bottom: 5%;
   z-index: 1000;
 }
-.t3 p{
-  color:#fff;
+.noimg{
+  width: 13%;
+  float: left;
+  margin-left:2% ;
 }
-.t3 h3{
-  font-size: 32px;
-  font-weight: 600;
-  color: #4070f4;
-  /* text-align: center; */
+.noimg img{
+  width: 100%;
+}
+.work{
+  width: 85%;
+  float: right;
+}
+.work h3{
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0CA750;
+ text-align: center; 
   margin-left: 5%;
   margin-bottom: 5%;
+}  */
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  max-width: 1200px !important;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.container .card1 {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05), 
+              inset -5px -5px 5px rgba(255, 255, 255, 0.5), 
+              5px 5px 15px rgba(0, 0, 0, 0.05), 
+              -5px -5px 15px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin: 30px;
+}
+
+.container .card1 .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  /* background: #ebf5fc; */
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.container .card1:hover .box {
+  transform: translateY(-50px);
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  -o-transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  /* background: linear-gradient(45deg, #b95ce4, #4f29cd); */
+  background: rgba(220, 28, 19,.8);
+}
+
+.container .card1 .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card1 .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .card1:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.container .card1 .box .content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  padding-top: 45%;
+  text-transform: uppercase;
+  color: #d80516;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/* .container .card1 .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+} */
+
+.container .card1:hover .box .content h3, .container .card1:hover .box .content p {
+  color: #fff;
+}
+
+.container .card1 .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card1:hover .box .content a {
+  background: #ff568f;
 }
 @media screen and (min-width: 360px) and (max-width: 768px){
   .net{
@@ -1444,9 +1591,8 @@ font-weight: 500;
 }
 #c1 h1 {
   font-size: 22px;
-  font-weight: 700;
-  line-height: 34px;
-  text-align: center;
+  display: block;
+  text-align: center !important;
   margin-bottom: 2%;
 }
 #c1 p {
@@ -1467,10 +1613,10 @@ font-weight: 500;
 }
 .star{
  width: 50%; 
- margin-left: 18%;
+ margin-left: 20%;
 }
 .ml{
-  margin-left: 23%; 
+  margin-left: 26%; 
 }
 /* .bttn:hover {
   background-color: #000;
@@ -1480,7 +1626,7 @@ font-weight: 500;
   height: 420px;
   background-color: #d80516;
   position: absolute;
-  top:400px;
+  top:420px;
   left: 10%;
 
 }
@@ -1852,6 +1998,129 @@ font-weight: 600;
   text-align: center;
   padding-top: 5%;
 }
+
+.service{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.boxsec{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.t2{
+  width: 80%;
+  height: 380px;
+  padding: 10% 0%;
+  margin:5% 10% ;
+}
+
+.t2 img{
+  margin-left: 38%;
+  margin-bottom: 5%;
+}
+.t2 h3{
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+#whychoose{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 3%;
+}
+.heading{
+  font-size: 22px;
+  margin-bottom: 8%;
+}
+
+.para{
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+.boxsec{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.t1{
+  width: 80%;
+  height: 380px;
+  padding: 10% 0%;
+  margin:5% 10% ;
+}
+.t1 img{
+  margin-left: 38%;
+  margin-bottom: 5%;
+}
+.t1 h3{
+  font-size: 22px;
+  font-weight: 600;
+}
+.boxsec .t1:hover{
+  background: #D2122E;
+  transform: scale(1.1);
+  z-index: 9;
+}
+.boxsec .t1:hover h3{
+  color: #fff !important;
+}
+.boxsec .t1:hover p{
+  color: #fff !important;
+}
+.wedeliver{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 5%;
+}
+.boxsec1{
+  width: 100%;
+  height: auto;
+
+}
+.iconsec{
+  width: 100%;
+  text-align: center;
+  height: 140px;
+  float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.portfolio{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 15%;
+}
+.cards {
+  /* align-items: center; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin: 0.5rem 0.5rem 2.5rem; */
+ 
+}
+
+.card {
+  width: 80%;
+  flex-direction: column;
+  margin: 5% 0%;
+}
+
 #con4 {
   width: 100%;
   height: auto;
